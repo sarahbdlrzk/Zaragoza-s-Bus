@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		4CB097A31D5C53F900FDD404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097A21D5C53F900FDD404 /* main.m */; };
 		4CB097A61D5C53F900FDD404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097A51D5C53F900FDD404 /* AppDelegate.m */; };
-		4CB097A91D5C53F900FDD404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097A81D5C53F900FDD404 /* ViewController.m */; };
 		4CB097AC1D5C53F900FDD404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB097AA1D5C53F900FDD404 /* Main.storyboard */; };
 		4CB097AE1D5C53F900FDD404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB097AD1D5C53F900FDD404 /* Assets.xcassets */; };
 		4CB097B11D5C53F900FDD404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB097AF1D5C53F900FDD404 /* LaunchScreen.storyboard */; };
 		4CB097BC1D5C53F900FDD404 /* Zaragoza_s_BusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097BB1D5C53F900FDD404 /* Zaragoza_s_BusTests.m */; };
+		4CB097C91D5C559500FDD404 /* BusStopsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097C81D5C559500FDD404 /* BusStopsService.m */; };
+		4CB097CE1D5C57FC00FDD404 /* NotificationKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097CD1D5C57FC00FDD404 /* NotificationKeys.m */; };
+		4CB097D11D5C58A300FDD404 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097D01D5C58A300FDD404 /* Utilities.m */; };
+		4CB097D41D5C5D5400FDD404 /* BusStopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097D31D5C5D5400FDD404 /* BusStopsViewController.m */; };
+		4CB097D81D5C5DF700FDD404 /* BusStopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097D71D5C5DF700FDD404 /* BusStopTableViewCell.m */; };
+		4CB097DD1D5C5EBA00FDD404 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097DC1D5C5EBA00FDD404 /* BusStop.m */; };
+		4CB097E01D5C60DA00FDD404 /* JsonKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097DF1D5C60DA00FDD404 /* JsonKeys.m */; };
+		4CB097E31D5C666D00FDD404 /* BusStopParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB097E21D5C666D00FDD404 /* BusStopParser.m */; };
+		4CB87D8A1D5DB2F40009CD3D /* MapDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB87D891D5DB2F40009CD3D /* MapDownloader.m */; };
+		4CB87D8D1D5DC3170009CD3D /* BusStopInfoDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB87D8C1D5DC3170009CD3D /* BusStopInfoDownloader.m */; };
+		4CB87D901D5DD2260009CD3D /* Estimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB87D8F1D5DD2260009CD3D /* Estimate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +41,6 @@
 		4CB097A21D5C53F900FDD404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CB097A41D5C53F900FDD404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CB097A51D5C53F900FDD404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CB097A71D5C53F900FDD404 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CB097A81D5C53F900FDD404 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CB097AB1D5C53F900FDD404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB097AD1D5C53F900FDD404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB097B01D5C53F900FDD404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +48,28 @@
 		4CB097B71D5C53F900FDD404 /* Zaragoza’s BusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zaragoza’s BusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB097BB1D5C53F900FDD404 /* Zaragoza_s_BusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zaragoza_s_BusTests.m; sourceTree = "<group>"; };
 		4CB097BD1D5C53F900FDD404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CB097C71D5C559500FDD404 /* BusStopsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopsService.h; sourceTree = "<group>"; };
+		4CB097C81D5C559500FDD404 /* BusStopsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopsService.m; sourceTree = "<group>"; };
+		4CB097CC1D5C57FC00FDD404 /* NotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationKeys.h; sourceTree = "<group>"; };
+		4CB097CD1D5C57FC00FDD404 /* NotificationKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationKeys.m; sourceTree = "<group>"; };
+		4CB097CF1D5C58A300FDD404 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		4CB097D01D5C58A300FDD404 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		4CB097D21D5C5D5400FDD404 /* BusStopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopsViewController.h; sourceTree = "<group>"; };
+		4CB097D31D5C5D5400FDD404 /* BusStopsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopsViewController.m; sourceTree = "<group>"; };
+		4CB097D61D5C5DF700FDD404 /* BusStopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopTableViewCell.h; sourceTree = "<group>"; };
+		4CB097D71D5C5DF700FDD404 /* BusStopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopTableViewCell.m; sourceTree = "<group>"; };
+		4CB097DB1D5C5EBA00FDD404 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
+		4CB097DC1D5C5EBA00FDD404 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
+		4CB097DE1D5C60DA00FDD404 /* JsonKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonKeys.h; sourceTree = "<group>"; };
+		4CB097DF1D5C60DA00FDD404 /* JsonKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonKeys.m; sourceTree = "<group>"; };
+		4CB097E11D5C666D00FDD404 /* BusStopParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopParser.h; sourceTree = "<group>"; };
+		4CB097E21D5C666D00FDD404 /* BusStopParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopParser.m; sourceTree = "<group>"; };
+		4CB87D881D5DB2F40009CD3D /* MapDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDownloader.h; sourceTree = "<group>"; };
+		4CB87D891D5DB2F40009CD3D /* MapDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDownloader.m; sourceTree = "<group>"; };
+		4CB87D8B1D5DC3170009CD3D /* BusStopInfoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopInfoDownloader.h; sourceTree = "<group>"; };
+		4CB87D8C1D5DC3170009CD3D /* BusStopInfoDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopInfoDownloader.m; sourceTree = "<group>"; };
+		4CB87D8E1D5DD2260009CD3D /* Estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Estimate.h; sourceTree = "<group>"; };
+		4CB87D8F1D5DD2260009CD3D /* Estimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Estimate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +111,13 @@
 		4CB097A01D5C53F900FDD404 /* Zaragoza’s Bus */ = {
 			isa = PBXGroup;
 			children = (
+				4CB097DA1D5C5E8E00FDD404 /* Controller */,
+				4CB097D91D5C5E8700FDD404 /* Model */,
+				4CB097D51D5C5DDA00FDD404 /* View */,
+				4CB097CA1D5C57AA00FDD404 /* Helper */,
+				4CB097C61D5C555100FDD404 /* Service */,
 				4CB097A41D5C53F900FDD404 /* AppDelegate.h */,
 				4CB097A51D5C53F900FDD404 /* AppDelegate.m */,
-				4CB097A71D5C53F900FDD404 /* ViewController.h */,
-				4CB097A81D5C53F900FDD404 /* ViewController.m */,
 				4CB097AA1D5C53F900FDD404 /* Main.storyboard */,
 				4CB097AD1D5C53F900FDD404 /* Assets.xcassets */,
 				4CB097AF1D5C53F900FDD404 /* LaunchScreen.storyboard */,
@@ -109,6 +142,63 @@
 				4CB097BD1D5C53F900FDD404 /* Info.plist */,
 			);
 			path = "Zaragoza’s BusTests";
+			sourceTree = "<group>";
+		};
+		4CB097C61D5C555100FDD404 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4CB097C71D5C559500FDD404 /* BusStopsService.h */,
+				4CB097C81D5C559500FDD404 /* BusStopsService.m */,
+				4CB87D881D5DB2F40009CD3D /* MapDownloader.h */,
+				4CB87D891D5DB2F40009CD3D /* MapDownloader.m */,
+				4CB87D8B1D5DC3170009CD3D /* BusStopInfoDownloader.h */,
+				4CB87D8C1D5DC3170009CD3D /* BusStopInfoDownloader.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		4CB097CA1D5C57AA00FDD404 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4CB097CC1D5C57FC00FDD404 /* NotificationKeys.h */,
+				4CB097CD1D5C57FC00FDD404 /* NotificationKeys.m */,
+				4CB097CF1D5C58A300FDD404 /* Utilities.h */,
+				4CB097D01D5C58A300FDD404 /* Utilities.m */,
+				4CB097DE1D5C60DA00FDD404 /* JsonKeys.h */,
+				4CB097DF1D5C60DA00FDD404 /* JsonKeys.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		4CB097D51D5C5DDA00FDD404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CB097D61D5C5DF700FDD404 /* BusStopTableViewCell.h */,
+				4CB097D71D5C5DF700FDD404 /* BusStopTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4CB097D91D5C5E8700FDD404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CB097DB1D5C5EBA00FDD404 /* BusStop.h */,
+				4CB097DC1D5C5EBA00FDD404 /* BusStop.m */,
+				4CB097E11D5C666D00FDD404 /* BusStopParser.h */,
+				4CB097E21D5C666D00FDD404 /* BusStopParser.m */,
+				4CB87D8E1D5DD2260009CD3D /* Estimate.h */,
+				4CB87D8F1D5DD2260009CD3D /* Estimate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4CB097DA1D5C5E8E00FDD404 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CB097D21D5C5D5400FDD404 /* BusStopsViewController.h */,
+				4CB097D31D5C5D5400FDD404 /* BusStopsViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB097A91D5C53F900FDD404 /* ViewController.m in Sources */,
+				4CB097D11D5C58A300FDD404 /* Utilities.m in Sources */,
+				4CB87D8D1D5DC3170009CD3D /* BusStopInfoDownloader.m in Sources */,
+				4CB097E01D5C60DA00FDD404 /* JsonKeys.m in Sources */,
+				4CB87D901D5DD2260009CD3D /* Estimate.m in Sources */,
+				4CB097D81D5C5DF700FDD404 /* BusStopTableViewCell.m in Sources */,
+				4CB097C91D5C559500FDD404 /* BusStopsService.m in Sources */,
+				4CB097CE1D5C57FC00FDD404 /* NotificationKeys.m in Sources */,
+				4CB097DD1D5C5EBA00FDD404 /* BusStop.m in Sources */,
+				4CB87D8A1D5DB2F40009CD3D /* MapDownloader.m in Sources */,
+				4CB097D41D5C5D5400FDD404 /* BusStopsViewController.m in Sources */,
+				4CB097E31D5C666D00FDD404 /* BusStopParser.m in Sources */,
 				4CB097A61D5C53F900FDD404 /* AppDelegate.m in Sources */,
 				4CB097A31D5C53F900FDD404 /* main.m in Sources */,
 			);
@@ -400,6 +500,7 @@
 				4CB097C21D5C53F900FDD404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CB097C31D5C53F900FDD404 /* Build configuration list for PBXNativeTarget "Zaragoza’s BusTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +509,7 @@
 				4CB097C51D5C53F900FDD404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
